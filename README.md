@@ -1,3 +1,7 @@
 # airpods-scss-pug
 
-Project dari Hands-on Workshop Boost your Coding Speed with Sass & PUG
+Project from **Hands-on Workshop Boost your Coding Speed with Sass & PUG**
+
+GDSC UNM x Indigohub.makassar
+
+
