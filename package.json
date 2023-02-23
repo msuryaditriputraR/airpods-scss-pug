@@ -2,9 +2,11 @@
   "name": "airpods",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch-scss": "npx sass --watch assets/scss:assets/css",
+    "watch-pug": "npx pug-cli -w -P -o ./ assets/pug/index.pug",
+    "start": "npx live-server ."
   },
   "keywords": [],
   "author": "",
