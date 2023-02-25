@@ -1,21 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-ul {
-  list-style: none;
+body {
+    font-family: $main-font;
+    font-weight: map-get($font-weights, "regular");
+    font-size: var(--normal-font-size);
+    color: $text-color;
+}
+
+li {
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
