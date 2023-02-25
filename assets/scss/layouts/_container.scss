@@ -1,0 +1,16 @@
+.container {
+    max-width: 1148px;
+    margin-inline: auto;
+
+    @include breakpoints-down("large") {
+        & {
+            margin-inline: 1.5rem;
+        }
+    }
+
+    @include breakpoints-down('very-small') {
+        & {
+            margin-inline: 1rem;
+        }
+    }
+}
