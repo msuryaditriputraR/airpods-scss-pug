@@ -1,74 +1,22 @@
-.header {
-  position: fixed;
-  z-index: 100;
-  width: 100%;
-  top: 0;
-  padding-block: 1.5rem;
-  padding-inline: 3.5rem;
-  height: 5rem;
-}
-.header .nav {
-  display: flex;
-  justify-content: space-between;
-}
-.header .nav__logo {
-  font-size: 1.5rem;
-  color: blue;
-}
-.header .nav__menu {
-  display: flex;
-  column-gap: 2.5rem;
-}
-.header .nav__list {
-  display: flex;
-  column-gap: 1.5rem;
-}
-.header .nav__link {
-  color: hsl(0deg, 0%, 0%);
-}
-.header .nav__btn {
-  background-color: red;
-  padding: 0.75rem 1.25rem;
-  border: none;
-  outline: none;
-  color: white;
-  border-radius: 2.5rem;
-}
-.header .nav__btn:hover {
-  background-color: blue;
-}
-.header .nav__jual {
-  background-color: blue;
-  padding: 0.75rem 1.25rem;
-  border: none;
-  outline: none;
-  color: white;
-  border-radius: 2.5rem;
-}
-.header .nav__jual:hover {
-  background-color: blue;
-}
+/* Error: Undefined mixin.
+ *   ,
+ * 5 | /     @include breakpoints-down("large") {
+ * 6 | |         & {
+ * 7 | |             margin-inline: 1.5rem;
+ * 8 | |         }
+ * 9 | \     }
+ *   '
+ *   assets\scss\layouts\_container.scss 5:5  @import
+ *   assets\scss\layouts\_index.scss 1:9      @import
+ *   assets\scss\main.scss 2:9                root stylesheet */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Undefined mixin.\a   \2577 \a 5 \2502  \250c      @include breakpoints-down("large") {\a 6 \2502  \2502          & {\a 7 \2502  \2502              margin-inline: 1.5rem;\a 8 \2502  \2502          }\a 9 \2502  \2514      }\a   \2575 \a   assets\\scss\\layouts\\_container.scss 5:5  @import\a   assets\\scss\\layouts\\_index.scss 1:9      @import\a   assets\\scss\\main.scss 2:9                root stylesheet';
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-/*# sourceMappingURL=main.css.map */
