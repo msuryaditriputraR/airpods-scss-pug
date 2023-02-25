@@ -1,0 +1,52 @@
+/* ==================== FONTS ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+$main-font: 'Roboto',
+sans-serif;
+
+// FONT SIZE
+:root {
+    --title-font-size: 2rem;
+    --subtitle-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .785rem;
+    --smaller-font-size: .725rem;
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --title-font-size: 2.85rem;
+        --subtitle-font-size: 2.25rem;
+        --normal-font-size: 1.215rem;
+        --small-font-size: .985rem;
+        --smaller-font-size: .825rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    :root {
+        --title-font-size: 1.675rem;
+        --subtitle-font-size: 1.325rem;
+        --normal-font-size: .925rem;
+        --small-font-size: .815rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    :root {
+        --title-font-size: 1.475rem;
+        --normal-font-size: .885rem;
+        --small-font-size: .785rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    :root {
+        --title-font-size: 1.325rem;
+        --subtitle-font-size: 1.285rem;
+        --normal-font-size: .925rem;
+    }
+}
+
+// FONT WEIGHT
+$font-weights: ("regular": 400, "medium": 500, "semi-bold": 600, "bold": 700);
