@@ -1,11 +1,11 @@
-include components/button.pug
+include ../components/button.pug
 
 header.header 
-  nav.nav 
+  nav.nav.container
     a.nav__logo(href="") AirPods
     div.nav__menu
       ul.nav__list 
         each link in links 
           li.nav__item
             a.nav__link(href="#")=link
-      +button("beli", "nav__btn")
+      +button("Beli", "nav__btn")
