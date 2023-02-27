@@ -1,15 +1,12 @@
 @mixin button($color, $radius: 0) {
   background-color: $color;
   padding: .75rem 1.25rem;
-  border: none;
-  outline: none;
   color: white;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba($color: $color, $alpha: .5);
 
   @if $radius>0 {
     border-radius: $radius;
   }
 
-  &:hover {
-    background-color: blue;
-  }
 }
