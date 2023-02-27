@@ -125,6 +125,7 @@ button {
 }
 .header .nav__logo {
   font-weight: 700;
+  font-size: calc(var(--normal-font-size) + 0.35rem);
 }
 
 main {
