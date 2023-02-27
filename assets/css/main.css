@@ -12,7 +12,7 @@
   :root {
     --title-font-size: 2.85rem;
     --subtitle-font-size: 2.25rem;
-    --normal-font-size: 1.215rem;
+    --normal-font-size: 1rem;
     --small-font-size: .985rem;
     --smaller-font-size: .825rem;
   }
@@ -92,48 +92,39 @@ button {
 }
 
 .header {
-  position: fixed;
-  z-index: 100;
   width: 100%;
+  position: fixed;
   top: 0;
-  padding-block: 1.5rem;
-  padding-inline: 3.5rem;
-  height: 5rem;
+  z-index: 100;
 }
 .header .nav {
+  height: 5rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.header .nav__logo {
-  font-size: 1.5rem;
-  color: blue;
-}
-.header .nav__menu {
-  display: flex;
-  column-gap: 2.5rem;
-}
-.header .nav__list {
+.header .nav__list, .header .nav__menu {
   display: flex;
   column-gap: 1.5rem;
+  align-items: center;
 }
-.header .nav__link {
-  color: hsl(0deg, 0%, 0%);
+.header .nav__link, .header .nav__logo {
+  color: hsl(240deg, 3%, 12%);
+}
+.header .nav__link:hover, .header .nav__logo:hover {
+  color: hsl(210deg, 100%, 45%);
 }
 .header .nav__btn {
-  background-color: red;
-  padding: 0.75rem 1.25rem;
+  background-color: hsl(210deg, 100%, 45%);
+  padding: 0.65rem 1.25rem;
   color: white;
   cursor: pointer;
-  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  font-weight: 500;
+  box-shadow: 0 0 5px rgba(0, 115, 230, 0.5);
   border-radius: 2.5rem;
 }
-.header .nav__jual {
-  background-color: blue;
-  padding: 0.75rem 1.25rem;
-  color: white;
-  cursor: pointer;
-  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
-  border-radius: 2.5rem;
+.header .nav__logo {
+  font-weight: 700;
 }
 
 main {

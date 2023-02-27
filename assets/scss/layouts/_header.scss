@@ -1,44 +1,39 @@
 $header-height: 5rem;
-$text-color: hsl(0, 0%, 0%);
 
 .header {
-  position: fixed;
-  z-index: 100;
   width: 100%;
+  position: fixed;
   top: 0;
-  padding-block: 1.5rem;
-  padding-inline: 3.5rem;
-  height: $header-height;
+  z-index: map-get($map: $z-indexes, $key: "fixed");
 
   .nav {
+    height: $header-height;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    &__logo {
-      font-size: 1.5rem;
-      color: blue;
-    }
-
+    &__list,
     &__menu {
       display: flex;
-      column-gap: 2.5rem;
-    }
-
-    &__list {
-      display: flex;
       column-gap: 1.5rem;
+      align-items: center;
     }
 
-    &__link {
+    &__link,
+    &__logo {
       color: $text-color;
+
+      &:hover {
+        color: $blue-color;
+      }
     }
 
     &__btn {
-      @include button(red, 2.5rem);
+      @include button($blue-color, 2.5rem);
     }
 
-    &__jual {
-      @include button(blue, 2.5rem);
+    &__logo {
+      font-weight: map-get($map: $font-weights, $key: "bold");
 
     }
   }
