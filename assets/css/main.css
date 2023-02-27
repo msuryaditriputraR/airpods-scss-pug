@@ -10,7 +10,7 @@
 
 @media screen and (min-width: 1024px) {
   :root {
-    --title-font-size: 2.85rem;
+    --title-font-size: 7.5rem;
     --subtitle-font-size: 2.25rem;
     --normal-font-size: 1rem;
     --small-font-size: .985rem;
@@ -131,6 +131,37 @@ button {
 
 main {
   margin-top: 5rem;
+}
+
+.description .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3.5rem;
+  min-height: calc(100vh - 5rem);
+}
+.description__title {
+  font-size: var(--title-font-size);
+  font-weight: 400;
+}
+.description__desc {
+  max-width: 40ch;
+  margin-top: 0.75rem;
+  line-height: 1.5;
+}
+.description__image {
+  display: flex;
+  column-gap: 1.5rem;
+}
+.description__image img {
+  max-width: 135px;
+  filter: drop-shadow(0 2px 10px rgba(30, 30, 32, 0.15));
+}
+.description__image img:first-child {
+  margin-bottom: 3.5rem;
+}
+.description__image img:last-child {
+  margin-top: 2.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
