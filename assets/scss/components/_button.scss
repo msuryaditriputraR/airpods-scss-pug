@@ -1,8 +1,9 @@
 @mixin button($color, $radius: 0) {
   background-color: $color;
-  padding: .75rem 1.25rem;
+  padding: .65rem 1.25rem;
   color: white;
   cursor: pointer;
+  font-weight: map-get($map: $font-weights, $key: "medium");
   box-shadow: 0 0 5px rgba($color: $color, $alpha: .5);
 
   @if $radius>0 {
