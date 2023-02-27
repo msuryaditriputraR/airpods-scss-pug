@@ -7,5 +7,5 @@ header.header
       ul.nav__list 
         each link in links 
           li.nav__item
-            a.nav__link(href="#")=link
+            a.nav__link(href="#" + link)=link
       +button("Beli", "nav__btn")

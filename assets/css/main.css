@@ -110,6 +110,7 @@ button {
 }
 .header .nav__link, .header .nav__logo {
   color: hsl(240deg, 3%, 12%);
+  text-transform: capitalize;
 }
 .header .nav__link:hover, .header .nav__logo:hover {
   color: hsl(210deg, 100%, 45%);
