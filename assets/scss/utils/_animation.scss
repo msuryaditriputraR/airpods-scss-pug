@@ -1,0 +1,9 @@
+@keyframes wipe-up {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}

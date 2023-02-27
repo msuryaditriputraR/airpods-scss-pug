@@ -29,10 +29,12 @@
 
       &:first-child {
         margin-bottom: 3.5rem;
+        animation: wipe-up 1s infinite alternate;
       }
 
       &:last-child {
         margin-top: 2.5rem;
+        animation: wipe-up 1s .5s infinite alternate;
       }
     }
   }

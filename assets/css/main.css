@@ -1,5 +1,13 @@
-/* ==================== FONTS ===================== */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@keyframes wipe-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+/* ==================== FONTS ===================== */
 :root {
   --title-font-size: 2rem;
   --subtitle-font-size: 1.5rem;
@@ -159,9 +167,11 @@ main {
 }
 .description__image img:first-child {
   margin-bottom: 3.5rem;
+  animation: wipe-up 1s infinite alternate;
 }
 .description__image img:last-child {
   margin-top: 2.5rem;
+  animation: wipe-up 1s 0.5s infinite alternate;
 }
 
 /*# sourceMappingURL=main.css.map */
