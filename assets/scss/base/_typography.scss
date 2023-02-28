@@ -6,45 +6,20 @@ sans-serif;
 
 // FONT SIZE
 :root {
-    --title-font-size: 2rem;
-    --subtitle-font-size: 1.5rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .785rem;
-    --smaller-font-size: .725rem;
+    --biggest-font-size: 3.5rem;
+    --bigger-font-size: 2.25rem;
+    --big-font-size: 1.625rem;
+    --normal-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     :root {
-        --title-font-size: 7.5rem;
-        --subtitle-font-size: 2.25rem;
+        --biggest-font-size: 8rem;
+        --bigger-font-size: 4.5rem;
+        --big-font-size: 2.5rem;
         --normal-font-size: 1rem;
-        --small-font-size: .985rem;
-        --smaller-font-size: .825rem;
-    }
-}
-
-@media screen and (max-width: 568px) {
-    :root {
-        --title-font-size: 1.675rem;
-        --subtitle-font-size: 1.325rem;
-        --normal-font-size: .925rem;
-        --small-font-size: .815rem;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    :root {
-        --title-font-size: 1.475rem;
-        --normal-font-size: .885rem;
-        --small-font-size: .785rem;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    :root {
-        --title-font-size: 1.325rem;
-        --subtitle-font-size: 1.285rem;
-        --normal-font-size: .925rem;
+        --smaller-font-size: 0.938rem;
     }
 }
 
