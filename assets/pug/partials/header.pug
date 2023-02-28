@@ -8,4 +8,7 @@ header.header
         each link in links 
           li.nav__item
             a.nav__link(href="#" + link)=link
+    .nav__actions
+      .nav__toggle#nav-toggle
+        i.ri-arrow-down-s-line
       +button("Beli", "nav__btn")
