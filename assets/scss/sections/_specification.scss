@@ -1,0 +1,42 @@
+.specification {
+  height: calc(100vh - 3rem);
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-content: center;
+  justify-content: center;
+
+  &__box {
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  &__sub-title {
+    font-size: var(--smaller-font-size);
+    display: inline-block;
+    width: 15ch;
+  }
+
+  &__title {
+    font-size: var(--bigger-font-size);
+    font-weight: 400;
+
+    span {
+      font-size: var(--big-font-size);
+    }
+  }
+
+  &__description {
+    font-size: var(--normal-font-size);
+    width: 15ch;
+    margin: 0 auto;
+  }
+
+  &__img {
+    width: max-content;
+    align-self: center;
+
+    img {
+      width: 218px;
+    }
+  }
+}
