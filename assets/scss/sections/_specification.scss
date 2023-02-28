@@ -1,10 +1,12 @@
 .specification {
-  height: calc(100vh - 3rem);
-  display: grid;
-  grid-template-rows: max-content max-content;
-  justify-content: center;
-  align-items: center;
-  row-gap: 1.5rem;
+  .container {
+    height: calc(100vh - 3rem);
+    display: grid;
+    grid-template-rows: max-content max-content;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5rem;
+  }
 
   &__content {
     display: flex;
@@ -46,10 +48,12 @@
   }
 
   @include breakpoints-down("tablet") {
-    grid-template-columns: max-content max-content;
-    grid-template-rows: none;
-    align-content: center;
-    justify-content: center;
+    .container {
+      grid-template-columns: max-content max-content;
+      grid-template-rows: none;
+      align-content: center;
+      justify-content: center;
+    }
 
     &__content {
       flex-direction: column;

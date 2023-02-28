@@ -157,7 +157,7 @@ main {
   animation: wipe-up 1s 0.5s infinite alternate;
 }
 
-.specification {
+.specification .container {
   height: calc(100vh - 3rem);
   display: grid;
   grid-template-rows: max-content max-content;
@@ -197,7 +197,7 @@ main {
   width: 300px;
 }
 @media screen and (max-width: 768px) {
-  .specification {
+  .specification .container {
     grid-template-columns: max-content max-content;
     grid-template-rows: none;
     align-content: center;
