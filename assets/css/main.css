@@ -7,6 +7,11 @@
     transform: translateY(-10px);
   }
 }
+@keyframes airpods {
+  50% {
+    transform: translatey(-6%);
+  }
+}
 /* ==================== FONTS ===================== */
 :root {
   --biggest-font-size: 3.5rem;
@@ -207,6 +212,9 @@ main {
   .specification__img img {
     width: 218px;
   }
+}
+.specification .airpods {
+  animation: airpods 3s infinite;
 }
 
 /*# sourceMappingURL=main.css.map */
