@@ -8,9 +8,8 @@
   }
 
   &__title {
-    font-size: var(--title-font-size);
+    font-size: var(--biggest-font-size);
     font-weight: map-get($map: $font-weights, $key: "regular");
-
   }
 
   &__desc {
