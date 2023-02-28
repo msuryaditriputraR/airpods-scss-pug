@@ -1,9 +1,15 @@
 .specification {
   height: calc(100vh - 3rem);
   display: grid;
-  grid-template-columns: max-content max-content;
-  align-content: center;
+  grid-template-rows: max-content max-content;
   justify-content: center;
+  align-items: center;
+  row-gap: 1.5rem;
+
+  &__content {
+    display: flex;
+    column-gap: 3.5rem;
+  }
 
   &__box {
     margin-bottom: 2.5rem;
@@ -26,17 +32,35 @@
   }
 
   &__description {
-    font-size: var(--normal-font-size);
     width: 15ch;
     margin: 0 auto;
   }
 
   &__img {
     width: max-content;
-    align-self: center;
+    justify-self: center;
 
     img {
-      width: 218px;
+      width: 300px;
+    }
+  }
+
+  @include breakpoints-down("tablet") {
+    grid-template-columns: max-content max-content;
+    grid-template-rows: none;
+    align-content: center;
+    justify-content: center;
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__img {
+      align-self: center;
+
+      img {
+        width: 218px;
+      }
     }
   }
 }

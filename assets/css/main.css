@@ -12,8 +12,8 @@
   --biggest-font-size: 3.5rem;
   --bigger-font-size: 2.25rem;
   --big-font-size: 1.625rem;
-  --normal-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
+  --normal-font-size: 0.985rem;
+  --smaller-font-size: 0.895rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -155,9 +155,14 @@ main {
 .specification {
   height: calc(100vh - 3rem);
   display: grid;
-  grid-template-columns: max-content max-content;
-  align-content: center;
+  grid-template-rows: max-content max-content;
   justify-content: center;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+.specification__content {
+  display: flex;
+  column-gap: 3.5rem;
 }
 .specification__box {
   margin-bottom: 2.5rem;
@@ -176,16 +181,32 @@ main {
   font-size: var(--big-font-size);
 }
 .specification__description {
-  font-size: var(--normal-font-size);
   width: 15ch;
   margin: 0 auto;
 }
 .specification__img {
   width: max-content;
-  align-self: center;
+  justify-self: center;
 }
 .specification__img img {
-  width: 218px;
+  width: 300px;
+}
+@media screen and (max-width: 768px) {
+  .specification {
+    grid-template-columns: max-content max-content;
+    grid-template-rows: none;
+    align-content: center;
+    justify-content: center;
+  }
+  .specification__content {
+    flex-direction: column;
+  }
+  .specification__img {
+    align-self: center;
+  }
+  .specification__img img {
+    width: 218px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
