@@ -131,6 +131,13 @@ main {
   column-gap: 3.5rem;
   min-height: calc(100vh - 5rem);
 }
+@media screen and (max-width: 768px) {
+  .description .container {
+    flex-direction: column;
+    row-gap: 2.5rem;
+    text-align: center;
+  }
+}
 .description__title {
   font-size: var(--biggest-font-size);
   font-weight: 400;
@@ -147,6 +154,11 @@ main {
 .description__image img {
   max-width: 135px;
   filter: drop-shadow(0 2px 10px rgba(30, 30, 32, 0.15));
+}
+@media screen and (max-width: 768px) {
+  .description__image img {
+    width: 85px;
+  }
 }
 .description__image img:first-child {
   margin-bottom: 3.5rem;

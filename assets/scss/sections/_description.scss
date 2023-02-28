@@ -5,6 +5,12 @@
     justify-content: center;
     column-gap: 3.5rem;
     min-height: calc(100vh - $header-height);
+
+    @include breakpoints-down("tablet") {
+      flex-direction: column;
+      row-gap: 2.5rem;
+      text-align: center;
+    }
   }
 
   &__title {
@@ -25,6 +31,10 @@
     img {
       max-width: 135px;
       filter: drop-shadow(0 2px 10px rgba($color: $text-color, $alpha: .15));
+
+      @include breakpoints-down("tablet") {
+        width: 85px;
+      }
 
       &:first-child {
         margin-bottom: 3.5rem;
