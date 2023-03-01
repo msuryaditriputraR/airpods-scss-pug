@@ -6,4 +6,5 @@ section.description#deskripsi
     .description__image
       - var i = 1
       while i <= 2
-        img(src="assets/img/airpod" + (i++) + ".png" alt="")
+        img(src="assets/img/airpod" + i + ".png" alt="" class="airpod" + i)
+        - i++
