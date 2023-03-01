@@ -1,14 +1,25 @@
 {
   "name": "airpods",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project from **Hands-on Workshop Boost your Coding Speed with Sass & PUG**",
   "main": "index.html",
   "scripts": {
     "watch-scss": "npx sass --watch assets/scss:assets/css",
     "watch-pug": "npx pug-cli -w -P -o ./ assets/pug/index.pug",
     "start": "npx live-server ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msuryaditriputraR/air-pods.git"
+  },
+  "keywords": [
+    "SCSS",
+    "PUG"
+  ],
+  "author": "Danbo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msuryaditriputraR/air-pods/issues"
+  },
+  "homepage": "https://github.com/msuryaditriputraR/air-pods#readme"
 }
